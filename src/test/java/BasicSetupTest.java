@@ -4,7 +4,7 @@ import org.testng.annotations.*;
 
 public class BasicSetupTest {
 
-    public ChromeDriver browser;
+    public static ChromeDriver browser;
 
     @BeforeSuite
     public void webdriverCommonSetup() {
@@ -14,16 +14,16 @@ public class BasicSetupTest {
         WebDriverManager.chromedriver().setup();
     }
 
-    @BeforeClass
+    @BeforeSuite
     public void setUp() {
         browser = new ChromeDriver();
     }
 
     // В цих методах відбувається ініціалізація браузера перед виконанням тестових методів
     // А також його закриття після виконання усіх тестів в класі
-    @AfterClass
+    @AfterSuite
     public void tearDown() {
-        browser.quit();
-    }
+            browser.quit();
 
+    }
 }
