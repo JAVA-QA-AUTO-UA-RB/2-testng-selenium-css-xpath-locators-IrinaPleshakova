@@ -13,7 +13,7 @@ public class FormAuthenticationTest extends BasicSetupTest {
 	public void formAuthenticationTest() {
 		browser.get("https://the-internet.herokuapp.com/login");
 
-		WebElement header = browser.findElement(By.xpath("//*[@id=\"content\"]/div/h2"));
+		WebElement header = browser.findElement(By.xpath("//h2['Login Page']"));
 		Assert.assertEquals(header.getText(), "Login Page", "The title of the page should be 'Login Page'.");
 
 		WebElement usernameField = browser.findElement(By.id("username"));
@@ -33,10 +33,11 @@ public class FormAuthenticationTest extends BasicSetupTest {
 		Assert.assertTrue(successMessage.getText().contains("You logged into a secure area!"),
 				"The text of the message must contain 'You logged into a secure area!'.");
 
-		WebElement entryHeader = browser.findElement(By.xpath("//*[@id=\"content\"]/div/h2"));
+		WebElement entryHeader = browser.findElement(By.xpath("//h2['Secure Area']"));
+		Assert.assertEquals(browser.getCurrentUrl(), "https://the-internet.herokuapp.com/secure");
 		Assert.assertEquals(entryHeader.getText(), "Secure Area", "The title of the page should be 'Secure Area'.");
 
-		WebElement logoutButton = browser.findElement(By.cssSelector("#content > div > a"));
+		WebElement logoutButton = browser.findElement(By.xpath("//i[contains(text(), 'Logout')]"));
 		Assert.assertTrue(logoutButton.isDisplayed(), "The 'Logout' button should be displayed after logging in.");
 		Assert.assertEquals(logoutButton.getText(), "Logout", "The text on the button should be 'Logout'.");
 		logoutButton.click();
@@ -47,6 +48,7 @@ public class FormAuthenticationTest extends BasicSetupTest {
 				"The text of the message must contain 'You logged out of the secure area!'.");
 
 		WebElement loginButtonAfterLogout = browser.findElement(By.cssSelector("#login > button"));
+		Assert.assertEquals(browser.getCurrentUrl(), "https://the-internet.herokuapp.com/login");
 		Assert.assertTrue(loginButtonAfterLogout.isDisplayed(), "The login button should be displayed after logging out.");
 	}
 }

@@ -13,7 +13,7 @@ public class CheckboxesTest extends BasicSetupTest {
 	public void checkboxesSelectedTest() {
 		browser.get("https://the-internet.herokuapp.com/checkboxes");
 
-		WebElement header = browser.findElement(By.xpath("//*[@id=\"content\"]/div/h3"));
+		WebElement header = browser.findElement(By.xpath("//h3['Checkboxes']"));
 		Assert.assertEquals(header.getText(), "Checkboxes", "The title of the page should be 'Checkboxes'.");
 
 		WebElement checkbox1 = browser.findElement(By.cssSelector("#checkboxes > input[type=checkbox]:nth-child(1)"));

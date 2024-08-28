@@ -14,7 +14,7 @@ public class DragAndDropTest extends BasicSetupTest {
 	public void dragAndDropTest() {
 		browser.get("https://the-internet.herokuapp.com/drag_and_drop");
 
-		WebElement header = browser.findElement(By.xpath("//*[@id=\"content\"]/div/h3"));
+		WebElement header = browser.findElement(By.xpath("//h3['Drag and Drop']"));
 		Assert.assertEquals(header.getText(), "Drag and Drop", "The title of the page should be 'Drag and Drop'.");
 
 		WebElement squareA = browser.findElement(By.id("column-a"));
@@ -28,7 +28,7 @@ public class DragAndDropTest extends BasicSetupTest {
 		Actions actions = new Actions(browser);
 		actions.dragAndDrop(squareA, squareB).perform();
 
-		WebElement headerA = browser.findElement(By.xpath("//*[@id=\"column-a\"]"));
+		WebElement headerA = browser.findElement(By.id("column-a"));
 		Assert.assertEquals(headerA.getText(), "B", "Element A must swap places with element B.");
 
 		Assert.assertTrue(squareA.isEnabled(), "Element A must remain active to interact.");

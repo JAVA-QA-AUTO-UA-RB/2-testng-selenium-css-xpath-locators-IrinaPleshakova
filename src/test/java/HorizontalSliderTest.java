@@ -16,10 +16,10 @@ public class HorizontalSliderTest extends BasicSetupTest {
 	public void horizontalSliderMoveTest() {
 		browser.get("https://the-internet.herokuapp.com/horizontal_slider");
 
-		WebElement header = browser.findElement(By.xpath("//*[@id=\"content\"]/div/h3"));
+		WebElement header = browser.findElement(By.xpath("//h3['Horizontal Slider']"));
 		Assert.assertEquals(header.getText(), "Horizontal Slider", "The title of the page should be 'Horizontal Slider'.");
 
-		WebElement slider = browser.findElement(By.cssSelector("#content > div > div > input[type=range]"));
+		WebElement slider = browser.findElement(By.cssSelector("input[type=range]"));
 		WebElement rangeValue = browser.findElement(By.id("range"));
 
 		String initialValue = rangeValue.getText();

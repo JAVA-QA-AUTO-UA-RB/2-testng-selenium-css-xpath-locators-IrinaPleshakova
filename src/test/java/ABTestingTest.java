@@ -13,7 +13,7 @@ public class ABTestingTest extends BasicSetupTest {
 	public void abTestingPageHasSpecificTextTest() throws InterruptedException {
 		browser.get("https://the-internet.herokuapp.com/abtest");
 
-		WebElement abTestText = browser.findElement(By.xpath("//*[@id=\"content\"]/div/h3"));
+		WebElement abTestText = browser.findElement(By.xpath("//h3['A/B Test Control']"));
 		Assert.assertTrue(abTestText.isDisplayed(), "The text 'A/B Test Control' should be displayed on the page");
 
 		String actualText = abTestText.getText();

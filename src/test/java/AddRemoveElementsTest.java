@@ -14,10 +14,10 @@ public class AddRemoveElementsTest extends BasicSetupTest {
 	public void addRemoveElementsTest() throws InterruptedException {
 		browser.get("https://the-internet.herokuapp.com/add_remove_elements/");
 
-		WebElement header = browser.findElement(By.xpath("//*[@id=\"content\"]/h3"));
+		WebElement header = browser.findElement(By.xpath("//h3['Add/Remove Elements']"));
 		Assert.assertEquals(header.getText(), "Add/Remove Elements", "The title of the page should be 'Add/Remove Elements'.");
 
-		WebElement addButton = browser.findElement(By.xpath("//*[@id=\"content\"]/div/button"));
+		WebElement addButton = browser.findElement(By.xpath("//button[@onclick='addElement()']"));
 		Assert.assertTrue(addButton.isDisplayed(), "The 'Add Element' button should be visible.");
 		for (int i = 0; i < 3; i++) {
 			addButton.click();

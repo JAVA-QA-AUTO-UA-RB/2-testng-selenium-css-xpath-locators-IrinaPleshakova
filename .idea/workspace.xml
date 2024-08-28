@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="bc148d79-7088-4507-9e88-e7cad9ed5f61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BasicSetupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasicSetupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ABTestingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ABTestingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddRemoveElementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddRemoveElementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CheckboxesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CheckboxesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DragAndDropTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DragAndDropTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DropdownTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DropdownTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FormAuthenticationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormAuthenticationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HorizontalSliderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HorizontalSliderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +49,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.ABTestingTest.abTestingPageHasSpecificTextTest.executor": "Run",
     "TestNG.ABTestingTest.executor": "Run",
+    "TestNG.AddRemoveElementsTest.addRemoveElementsTest.executor": "Run",
+    "TestNG.AddRemoveElementsTest.executor": "Run",
     "TestNG.CheckboxesTest.checkboxesSelectedTest.executor": "Run",
+    "TestNG.CheckboxesTest.executor": "Run",
+    "TestNG.DragAndDropTest.executor": "Run",
+    "TestNG.DropdownTest.executor": "Run",
+    "TestNG.FormAuthenticationTest.executor": "Run",
     "TestNG.SeleniumTestngTest.abTestingPageHasSpecificTextTest.executor": "Run",
     "TestNG.SeleniumTestngTest.addRemoveElementsTest.executor": "Run",
     "TestNG.SeleniumTestngTest.checkboxesSelectedTest.executor": "Run",
@@ -63,11 +75,11 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.ABTestingTest.abTestingPageHasSpecificTextTest">
-    <configuration name="ABTestingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.FormAuthenticationTest">
+    <configuration name="AddRemoveElementsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SELENIUM_TESTNG_HOMEWORK" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ABTestingTest" />
+      <option name="MAIN_CLASS_NAME" value="AddRemoveElementsTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -75,48 +87,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ABTestingTest.abTestingPageHasSpecificTextTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SELENIUM_TESTNG_HOMEWORK" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ABTestingTest" />
-      <option name="METHOD_NAME" value="abTestingPageHasSpecificTextTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckboxesTest.checkboxesSelectedTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckboxesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SELENIUM_TESTNG_HOMEWORK" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CheckboxesTest" />
-      <option name="METHOD_NAME" value="checkboxesSelectedTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTestngTest.dragAndDropTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DragAndDropTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SELENIUM_TESTNG_HOMEWORK" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTestngTest" />
-      <option name="METHOD_NAME" value="dragAndDropTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="DragAndDropTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTestngTest.horizontalSliderMoveTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DropdownTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SELENIUM_TESTNG_HOMEWORK" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTestngTest" />
-      <option name="METHOD_NAME" value="horizontalSliderMoveTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="DropdownTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormAuthenticationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SELENIUM_TESTNG_HOMEWORK" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FormAuthenticationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -125,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ABTestingTest.abTestingPageHasSpecificTextTest" />
-        <item itemvalue="TestNG.ABTestingTest" />
-        <item itemvalue="TestNG.CheckboxesTest.checkboxesSelectedTest" />
-        <item itemvalue="TestNG.SeleniumTestngTest.horizontalSliderMoveTest" />
-        <item itemvalue="TestNG.SeleniumTestngTest.dragAndDropTest" />
+        <item itemvalue="TestNG.FormAuthenticationTest" />
+        <item itemvalue="TestNG.DropdownTest" />
+        <item itemvalue="TestNG.DragAndDropTest" />
+        <item itemvalue="TestNG.CheckboxesTest" />
+        <item itemvalue="TestNG.AddRemoveElementsTest" />
       </list>
     </recent_temporary>
   </component>

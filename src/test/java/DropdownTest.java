@@ -13,17 +13,17 @@ public class DropdownTest extends BasicSetupTest {
 	public void dropdownSelectedTest() {
 		browser.get("https://the-internet.herokuapp.com/dropdown");
 
-		WebElement header = browser.findElement(By.xpath("//*[@id=\"content\"]/div/h3"));
+		WebElement header = browser.findElement(By.xpath("//h3['Dropdown List']"));
 		Assert.assertEquals(header.getText(), "Dropdown List", "The title of the page should be 'Dropdown List'.");
 
-		WebElement dropdown = browser.findElement(By.cssSelector("#dropdown"));
+		WebElement dropdown = browser.findElement(By.id("dropdown"));
 		Assert.assertTrue(dropdown.isDisplayed(), "The dropdown list should be displayed on the page.");
 
 		WebElement defaultOption = browser.findElement(By.xpath("//*[@id=\"dropdown\"]/option[@selected]"));
 		Assert.assertEquals(defaultOption.getText(), "Please select an option", "'Please select an option' should be selected by default.");
 
 		dropdown.click();
-		WebElement option2 = browser.findElement(By.xpath("//*[@id=\"dropdown\"]/option[3]"));
+		WebElement option2 = browser.findElement(By.cssSelector("option[value='2']"));
 		option2.click();
 
 		Assert.assertTrue(option2.isSelected(), "The option 'Option 2' must be selected.");
